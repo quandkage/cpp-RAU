@@ -1,4 +1,6 @@
 #include <iostream>
+#define RED "\x1b[31m"
+#define RESET "\x1b[0m"
 
 template<class T>
 class Node {
@@ -52,10 +54,10 @@ public:
             if (tmp->data == val) {
                 return tmp;
             }
-            if (tmp->data < head->data) {
-                tmp = tmp->left;
-            } else if (tmp->data > head->data) {
+            if (val > tmp->data) {
                 tmp = tmp->right;
+            } else {
+                tmp = tmp->left;
             }
         }
         return nullptr;
@@ -79,6 +81,7 @@ public:
                 tmp = tmp->left;
             }
         }
+        newNode->parent = parent;
 
         if (parent->data > newNode->data) {
 
@@ -219,11 +222,13 @@ int main() {
     bst.insert(50);
     bst.insert(70);
     bst.insert(55);
-
-    bst.remove(70);
-    bst.remove(40);
-    bst.remove(60);
-
-    bst.printTree();
+    try {
+        bst.remove(70);
+        bst.remove(40);
+        bst.remove(60);
+    } catch (std::exception &e) {
+        std::cout << RED << e.what() << RESET << std::endl;
+        bst.printTree();
+    }
 
 }
