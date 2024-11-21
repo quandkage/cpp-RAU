@@ -94,46 +94,52 @@ public:
     }
 
     void remove(Node<T> *needToDelete) override {
-        // case 1 -  տերև է
         if (!needToDelete->left && !needToDelete->right) {
-            if (needToDelete->parent->left == needToDelete) {
-                needToDelete->parent->left = nullptr;
+            if (needToDelete->parent) {
+                if (needToDelete->parent->left == needToDelete) {
+                    needToDelete->parent->left = nullptr;
+                } else {
+                    needToDelete->parent->right = nullptr;
+                }
             } else {
-                needToDelete->parent->right = nullptr;
+                head = nullptr;
             }
             delete needToDelete;
         }
-            // case 2 - ունի մեկ որդի
         else if (!needToDelete->left || !needToDelete->right) {
             Node<T> *child = (needToDelete->left) ? needToDelete->left : needToDelete->right;
 
-            if (!needToDelete->left) {
-                if (needToDelete->parent->right == needToDelete) {
-                    needToDelete->parent->right = child;
-                } else {
-                    needToDelete->parent->left = child;
-                }
-                if (child) {
-                    child->parent = needToDelete->parent;
-                }
-                delete needToDelete;
-            }
-            else {
+            if (needToDelete->parent) {
                 if (needToDelete->parent->left == needToDelete) {
-                    needToDelete->parent->left = needToDelete->left;
+                    needToDelete->parent->left = child;
                 } else {
-                    needToDelete->parent->right = needToDelete->left;
+                    needToDelete->parent->right = child;
                 }
-                delete needToDelete;
-            }
-        }
-            // case 3 - ունի երկու որդի
-        else {
-            if (needToDelete->parent->left == needToDelete) {
-                needToDelete->parent->left = treeMin(needToDelete->right);
             } else {
-                needToDelete->parent->right = treeMin(needToDelete->left);
+                head = child;
             }
+
+            if (child) {
+                child->parent = needToDelete->parent;
+            }
+
+            delete needToDelete;
+        }
+        else {
+            Node<T> *minNode = treeMin(needToDelete->right);
+            needToDelete->data = minNode->data;
+            remove(minNode);
+        }
+    }
+
+
+
+    void remove (const T& elem) {
+        if (Node<T> *nodeToDelete = search(elem)) {
+            remove(nodeToDelete);
+        }
+        else {
+            throw std::invalid_argument("Element not found");
         }
     }
 
@@ -193,18 +199,17 @@ int main() {
 
     BinarySearchTree<int> bst;
 
-    // Insert nodes
-    bst.insert(15);
-    bst.insert(6);
-    bst.insert(18);
-    bst.insert(3);
-    bst.insert(7);
-    bst.insert(17);
+    bst.insert(40);
     bst.insert(20);
-    bst.insert(2);
-    bst.insert(4);
-    bst.insert(13);
-    bst.insert(9);
+    bst.insert(10);
+    bst.insert(30);
+    bst.insert(50);
+    bst.insert(70);
+    bst.insert(55);
+
+    bst.remove(70);
+    bst.remove(40);
+    bst.remove(60);
 
     bst.printTree();
 
