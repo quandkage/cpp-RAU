@@ -127,8 +127,20 @@ public:
         }
         else {
             Node<T> *minNode = treeMin(needToDelete->right);
-            needToDelete->data = minNode->data;
-            remove(minNode);
+            needToDelete->right = minNode->right;
+
+            if (minNode->parent->left == minNode) {
+                minNode->parent->left = minNode->right;
+            } else {
+                minNode->parent->right = minNode->right;
+            }
+
+            if (minNode->right) {
+                minNode->right->parent = minNode->parent;
+            }
+
+            delete minNode;
+
         }
     }
 
