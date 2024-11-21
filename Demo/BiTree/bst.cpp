@@ -126,8 +126,10 @@ public:
             delete needToDelete;
         }
         else {
-            Node<T> *minNode = treeMin(needToDelete->right);
-            needToDelete->right = minNode->right;
+            Node<T> *minNode = needToDelete->right;
+            while (minNode->left) {
+                minNode = minNode->left;
+            }
 
             if (minNode->parent->left == minNode) {
                 minNode->parent->left = minNode->right;
