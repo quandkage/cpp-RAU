@@ -1,4 +1,4 @@
-# Install script for directory: /home/robert/Desktop/cpp-RAU/Demo/NodeTree
+# Install script for directory: /home/robert/Desktop/cpp-RAU/Demo
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

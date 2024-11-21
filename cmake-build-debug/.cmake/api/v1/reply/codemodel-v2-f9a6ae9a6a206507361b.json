@@ -19,15 +19,15 @@
 					"source" : "."
 				},
 				{
-					"build" : "Demo/NodeTree",
-					"jsonFile" : "directory-Demo.NodeTree-Debug-23c16cc44b9618a658fb.json",
+					"build" : "Demo",
+					"jsonFile" : "directory-Demo-Debug-90134603bd34d39a8c34.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.29"
 					},
 					"parentIndex" : 0,
 					"projectIndex" : 1,
-					"source" : "Demo/NodeTree",
+					"source" : "Demo",
 					"targetIndexes" : 
 					[
 						0
@@ -65,9 +65,9 @@
 			[
 				{
 					"directoryIndex" : 1,
-					"id" : "DemoPostorderParent::@15852025fb2f237c9558",
-					"jsonFile" : "target-DemoPostorderParent-Debug-8a7889573099360be8da.json",
-					"name" : "DemoPostorderParent",
+					"id" : "DemoBitree::@ddad25fb24bd67c0ad88",
+					"jsonFile" : "target-DemoBitree-Debug-889a8099812c84fcbade.json",
+					"name" : "DemoBitree",
 					"projectIndex" : 1
 				}
 			]

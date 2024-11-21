@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Demo/NodeTree/DemoPostorderParent"
+			"path" : "Demo/DemoBitree"
 		}
 	],
 	"backtrace" : 1,
@@ -14,7 +14,7 @@
 		],
 		"files" : 
 		[
-			"Demo/NodeTree/CMakeLists.txt"
+			"Demo/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -24,7 +24,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 4,
+				"line" : 5,
 				"parent" : 0
 			}
 		]
@@ -53,7 +53,7 @@
 			]
 		}
 	],
-	"id" : "DemoPostorderParent::@15852025fb2f237c9558",
+	"id" : "DemoBitree::@ddad25fb24bd67c0ad88",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -69,12 +69,12 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "DemoPostorderParent",
-	"nameOnDisk" : "DemoPostorderParent",
+	"name" : "DemoBitree",
+	"nameOnDisk" : "DemoBitree",
 	"paths" : 
 	{
-		"build" : "Demo/NodeTree",
-		"source" : "Demo/NodeTree"
+		"build" : "Demo",
+		"source" : "Demo"
 	},
 	"sourceGroups" : 
 	[
@@ -91,7 +91,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Demo/NodeTree/PostorderParent.cpp",
+			"path" : "Demo/BiTree/bst.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],
