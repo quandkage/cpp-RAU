@@ -130,7 +130,7 @@ public:
             while (minNode->left) {
                 minNode = minNode->left;
             }
-
+            needToDelete->data = minNode->data;
             if (minNode->parent->left == minNode) {
                 minNode->parent->left = minNode->right;
             } else {
@@ -140,7 +140,6 @@ public:
             if (minNode->right) {
                 minNode->right->parent = minNode->parent;
             }
-
             delete minNode;
 
         }
