@@ -8,7 +8,7 @@
 	"installers" : [],
 	"paths" : 
 	{
-		"build" : "Demo/NodeTree",
-		"source" : "Demo/NodeTree"
+		"build" : "Demo",
+		"source" : "Demo"
 	}
 }
