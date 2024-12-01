@@ -8,7 +8,8 @@
 					"build" : ".",
 					"childIndexes" : 
 					[
-						1
+						1,
+						2
 					],
 					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
@@ -32,6 +33,21 @@
 					[
 						0
 					]
+				},
+				{
+					"build" : "Demo/Red-Black",
+					"jsonFile" : "directory-Demo.Red-Black-Debug-c35389189a21f2e8b5f6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.29"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "Demo/Red-Black",
+					"targetIndexes" : 
+					[
+						1
+					]
 				}
 			],
 			"name" : "Debug",
@@ -40,7 +56,8 @@
 				{
 					"childIndexes" : 
 					[
-						1
+						1,
+						2
 					],
 					"directoryIndexes" : 
 					[
@@ -59,6 +76,18 @@
 					[
 						0
 					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "RedBlack",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1
+					]
 				}
 			],
 			"targets" : 
@@ -69,6 +98,13 @@
 					"jsonFile" : "target-DemoPostorderParent-Debug-8a7889573099360be8da.json",
 					"name" : "DemoPostorderParent",
 					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "RedBlack::@9067101e59befb555a25",
+					"jsonFile" : "target-RedBlack-Debug-7f05ed7c446dd7ab1a47.json",
+					"name" : "RedBlack",
+					"projectIndex" : 2
 				}
 			]
 		}

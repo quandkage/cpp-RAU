@@ -225,6 +225,15 @@ Hzor_IS_TOP_LEVEL:STATIC=OFF
 Hzor_SOURCE_DIR:STATIC=/home/robert/Desktop/cpp-RAU/Demo/NodeTree
 
 //Value Computed by CMake
+RedBlack_BINARY_DIR:STATIC=/home/robert/Desktop/cpp-RAU/cmake-build-debug/Demo/Red-Black
+
+//Value Computed by CMake
+RedBlack_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+RedBlack_SOURCE_DIR:STATIC=/home/robert/Desktop/cpp-RAU/Demo/Red-Black
+
+//Value Computed by CMake
 cpp_homeworks_BINARY_DIR:STATIC=/home/robert/Desktop/cpp-RAU/cmake-build-debug
 
 //Value Computed by CMake
@@ -334,7 +343,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

@@ -1,6 +1,8 @@
 # ninja log v6
-1	29	1733065477190018768	build.ninja	83b05f0f2c190d18
+1	29	1733065736430912023	build.ninja	83b05f0f2c190d18
 1	850	1731268966007603492	Demo/NodeTree/CMakeFiles/DemoPostorder.dir/postorder.cpp.o	3b7be6c60e09869
 851	937	1731268966855618012	Demo/NodeTree/DemoPostorder	468ada00772b3c9b
 1	789	1731271523420716232	Demo/NodeTree/CMakeFiles/DemoPostorderParent.dir/PostorderParent.cpp.o	6d1f3695b3a99374
 789	869	1731271524208735494	Demo/NodeTree/DemoPostorderParent	337dc8995814284f
+2	642	1733065792399228549	Demo/Red-Black/CMakeFiles/RedBlack.dir/Red-BlackTree.cpp.o	acff0f87411791b
+642	731	1733065793038264807	Demo/Red-Black/RedBlack	260f883d5964cbb5
